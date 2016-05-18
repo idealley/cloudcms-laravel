@@ -15,8 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Idealley\\CloudCms\\": "packages/ideally/cloudcms-laravel/src"
+            "Idealley\\CloudCms\\": "src/Idealley/CloudCms"
         }
     },
     "minimum-stability": "dev"
