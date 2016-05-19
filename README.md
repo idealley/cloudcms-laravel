@@ -41,4 +41,11 @@ You can get an image like this
                     ->addParams(['size' => '400'])
                     ->set();
 
-We need to get the path programatically. You can chain any params as per [the documentation](https://www.cloudcms.com/documentation/application-server/services/node-urls.html)                                        
+We need to get the path programatically. You can chain any params as per [the documentation](https://www.cloudcms.com/documentation/application-server/services/node-urls.html)
+
+Do not forget to add these values in your .env file
+
+        CC_CLIENT_KEY=
+        CC_CLIENT_SECRET=
+        CC_USERNAME=
+        CC_PASSWORD=                                        
