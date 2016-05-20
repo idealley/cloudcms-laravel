@@ -26,6 +26,7 @@
 */
 
 // We will need the proxy for the images and to download elements
+// We will add some example routes and a controller
 
 Route::group(['middleware' => ['web']], function () {
 
