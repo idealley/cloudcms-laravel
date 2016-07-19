@@ -1,8 +1,23 @@
-# Laravel Cloud CMS SDK and Toolkit
+# Laravel Cloud CMS Wrapper
+Here is the [PhP agnostic SDK](https://github.com/idealley/cloudcms-sdk)
 
 # Every thing is still very experimental and subject to CHANGE
 
-CC is a Laravel Facade, if you do not use Laravel you can just new up the class.
+## How to install:
+
+`composer require idealley/cloudcms-laravel`
+
+Publish the config with the command 
+
+`php artisan vendor:publish`
+
+This will let you change few settings in the `app/config` folder.
+
+## How to use
+
+CC is a Laravel Facade.
+
+to use it add `use CC;` at the top of your file.
 
 You can get a children of a node like this (think category or list of blogs)
 
@@ -41,11 +56,16 @@ You can get an image like this
                     ->addParams(['size' => '400'])
                     ->set();
 
-We need to get the path programatically. You can chain any params as per [the documentation](https://www.cloudcms.com/documentation/application-server/services/node-urls.html)
+There are many more methods you can use, check 'Node' class in the `cloudcms-sdk` to find everything that is available. Each method is documented with working query examples.
+
+You can chain any params as per [the documentation](https://www.cloudcms.com/documentation/application-server/services/node-urls.html)
 
 Do not forget to add these values in your .env file
 
         CC_CLIENT_KEY=
         CC_CLIENT_SECRET=
         CC_USERNAME=
-        CC_PASSWORD=                                        
+        CC_PASSWORD= 
+        CC_CLIENT_KEY=
+        CC_TOKEN_STORAGE_PATH=/storage/token
+        CC_DEPLOYMENT_URL=                                       

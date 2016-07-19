@@ -6,7 +6,6 @@ use Idealley\CloudCmsSDK\Auth;
 use App\Http\Controllers\Controller;
 use Idealley\CloudCmsSDK\ClientBase;
 use Intervention\Image\Facades\Image;
-use Idealley\CloudCms\Facades\CloudCms as CC;
 use League\OAuth2\Client\Provider\GenericProvider;
 
 class ProxyController extends Controller

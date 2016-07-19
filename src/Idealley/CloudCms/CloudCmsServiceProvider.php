@@ -37,7 +37,8 @@ class CloudCmsServiceProvider extends ServiceProvider
                 config('cloudcms.baseUrl'),
                 config('cloudcms.deploymentUrl'),
                 config('cloudcms.repositoryId'),
-                config('cloudcms.branch')
+                config('cloudcms.branch'),
+                config('cloudcms.tokenStoragePath')
             );
         });
 
