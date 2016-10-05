@@ -48,6 +48,6 @@ class CloudCmsServiceProvider extends ServiceProvider
             $loader->alias('CC','Idealley\CloudCms\Facades\CloudCms');
         });
 
-        $this->app->make('Idealley\CloudCms\ProxyController');
+       // $this->app->make('Idealley\CloudCms\ProxyController');
     }
 }
