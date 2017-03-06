@@ -17,5 +17,5 @@
             "Idealley\\CloudCms\\": "src/Idealley/CloudCms"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
